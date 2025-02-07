@@ -1,0 +1,173 @@
+/* ==========================================================================
+   CSS Variables & Global Settings
+   ========================================================================== */
+:root {
+	--teal: #008381;
+	--burnt-orange: #f06d53;
+	--white: #ffffff;
+	--black: #141414;
+	--gotham-font: 'Lato', Arial, sans-serif;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Base Styles & Typography
+   ========================================================================== */
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400; /* Equivalent to Gotham Regular */
+	color: var(--black);
+	font-size: 19px; /* Default platform size */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	color: var(--teal) !important;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700; /* Equivalent to Gotham Bold */
+}
+
+h2 {
+	color: var(--burnt-orange) !important;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600; /* Equivalent to Gotham Medium */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+footer {
+	padding: 10px 0;
+	text-align: center;
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center;
+	flex-wrap: nowrap;
+	background-color: var(--white);
+	max-width: 100%;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+
+footer img {
+	max-height: 50px;
+}
+
+/* ==========================================================================
+   List Styles
+   ========================================================================== */
+.large-number {
+	list-style: none;
+	counter-reset: list-number;
+	padding-left: 30px;
+	margin-left: 20px; /* Indentation for list */
+}
+
+.large-number li {
+	counter-increment: list-number;
+	margin-bottom: 0.5rem;
+}
+
+.large-number li::before {
+	content: counter(list-number) '.';
+	color: var(--burnt-orange);
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 1.2em;
+}
+
+/* ==========================================================================
+   Overrides & Utility Classes
+   ========================================================================== */
+/* Inline Style Conflict Overrides */
+[style*="background-color"] {
+	background-color: var(--teal) !important;
+}
+
+/* ==========================================================================
+   Grid & Card Layouts
+   ========================================================================== */
+.grid-cards {
+	margin-top: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	background: var(--white);
+	border: 1px solid var(--teal);
+	padding: 20px;
+	border-radius: 8px;
+	text-align: left;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Icon & Heading Components
+   ========================================================================== */
+.icon-heading {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.icon-heading i {
+	font-size: 1.5rem;
+	color: var(--burnt-orange);
+	margin-right: 10px; /* Adds spacing between the icon and heading */
+}
+
+.icon-heading h3 {
+	font-size: 1.2rem;
+	color: var(--black);
+	font-weight: 600;
+	margin: 0; /* Remove default margin for better alignment */
+}
+
+.card p {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	color: var(--black);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+	.large-number {
+		padding-left: 15px;
+		margin-left: 10px;
+	}
+}
+
+/* ==========================================================================
+   Font Awesome Icon Overrides
+   ========================================================================== */
+.fas {
+	font-size: clamp(65px, 5vw, 75px);
+	color: var(--black) !important;
+}
+
+h2 i {
+	color: var(--black);
+	opacity: 0.85; /* Adjust value as needed */
+	margin-right: 10px;
+}

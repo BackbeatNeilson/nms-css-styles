@@ -34,13 +34,11 @@ h1, h2 {
 
 h1 {
 	color: var(--teal) !important;
-	font-family: 'Lato', sans-serif;
 	font-weight: 700; /* Equivalent to Gotham Bold */
 }
 
 h2 {
 	color: var(--burnt-orange) !important;
-	font-family: 'Lato', sans-serif;
 	font-weight: 600; /* Equivalent to Gotham Medium */
 	display: flex;
 	align-items: center;
@@ -132,7 +130,7 @@ footer img {
 .icon-heading i {
 	font-size: 1.5rem;
 	color: var(--burnt-orange);
-	margin-right: 10px; /* Adds spacing between the icon and heading */
+	margin-right: 10px; /* Spacing between the icon and heading */
 }
 
 .icon-heading h3 {
@@ -167,6 +165,7 @@ footer img {
 }
 
 h2 i {
+	/* Specific overrides for icons within h2 tags */
 	color: var(--black);
 	opacity: 0.85; /* Adjust value as needed */
 	margin-right: 10px;

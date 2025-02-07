@@ -343,7 +343,7 @@ td {
 /* ==========================================================================
    Font Awesome Icon Overrides
    ========================================================================== */
-.fas {
+.fas, .fa-solid {
 	font-size: clamp(65px, 5vw, 75px);
 	color: var(--black) !important;
 }
@@ -351,6 +351,12 @@ td {
 h2 i {
 	/* Specific overrides for icons within h2 tags */
 	color: var(--black);
+	opacity: 0.85; /* Adjust value as needed */
+	margin-right: 10px;
+}
+h3 i {
+	/* Specific overrides for icons within h3 tags */
+	color: var(--burnt-orange);
 	opacity: 0.85; /* Adjust value as needed */
 	margin-right: 10px;
 }

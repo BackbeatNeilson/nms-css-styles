@@ -345,7 +345,6 @@ td {
    ========================================================================== */
 .fas, .fa-solid {
 	font-size: clamp(65px, 5vw, 75px);
-	color: var(--black) !important;
 }
 
 h2 i {

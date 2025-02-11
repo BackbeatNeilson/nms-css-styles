@@ -49,11 +49,11 @@ h2 {
 /* ==========================================================================
    Utility & Global Overrides
    ========================================================================== */
-/* Inline Style Conflict Overrides */
+/* Inline Style Conflict Overrides 
 [style*="background-color"] {
 	background-color: var(--teal) !important;
-}
-
+} commenting out because I think is a relic from early iterations
+*/
 /* ==========================================================================
    Components
    ========================================================================== */
@@ -101,6 +101,12 @@ blockquote {
 	border-radius: 8px;
 	text-align: left;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-cards .icon-heading i {
+	font-size: 1.5rem;
+	color: var(--burnt-orange);
+	margin-right: 10px; /* Spacing between icon and heading */
 }
 
 .icon-heading {

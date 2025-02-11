@@ -75,7 +75,13 @@ footer {
 footer img {
 	max-height: 50px;
 }
-
+/* --- Blockquote styling --- */
+blockquote {
+	border: 1px solid var(--teal);
+	padding: 20px;
+	border-radius: 8px;
+	font-style: italic;
+}
 /* --- Grid & Card Layouts & Icon/Heading Components --- */
 .grid-cards {
 	margin-top: 20px;

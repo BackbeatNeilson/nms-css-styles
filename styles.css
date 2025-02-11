@@ -330,7 +330,7 @@ right: 0; /* Aligns circle to the right */
 	font-weight: bold;
 }
 
-.first-table .heading {
+.first-table thead th {
 	text-align: center;
 	font-weight: bold;
 	border-bottom: 3px double var(--black);

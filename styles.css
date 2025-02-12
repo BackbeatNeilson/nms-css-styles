@@ -83,7 +83,7 @@ blockquote {
 	border-radius: 8px;
 	font-style: italic;
 }
-blockquote footer {
+blockquote > footer {
 	font-style: normal;
 	font-weight: bold;
 }

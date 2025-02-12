@@ -35,6 +35,7 @@ h1, h2 {
 h1 {
 	color: var(--teal) !important;
 	font-weight: 700; /* Equivalent to Gotham Bold */
+	margin-top: 1em;
 }
 
 h2 {

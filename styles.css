@@ -358,6 +358,10 @@ td {
 	border: 0; /* No borders for table cells */
 }
 
+.first-table tr td:not(.left-column) {
+    border-bottom: 1px solid var(--black);
+}
+
 /* Table 2 Styling */
 .second-table {
 	width: 100%;

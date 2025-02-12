@@ -83,6 +83,10 @@ blockquote {
 	border-radius: 8px;
 	font-style: italic;
 }
+blockquote footer {
+	font-style: normal;
+	font-weight: bold;
+}
 /* --- Grid & Card Layouts & Icon/Heading Components --- */
 .grid-cards {
 	margin-top: 20px;

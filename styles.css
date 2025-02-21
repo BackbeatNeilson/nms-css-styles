@@ -337,6 +337,7 @@ right: 0; /* Aligns circle to the right */
 	background-color: var(--teal);
 	color: var(--white);
 	border-right: 1px solid var(--black);
+	margin-left: 5px;
 	font-weight: bold;
 }
 

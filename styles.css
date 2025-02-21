@@ -124,7 +124,6 @@ blockquote > footer {
 	font-size: 1rem;
 	color: var(--black);
 	font-weight: 600;
-	margin: 0; /* Remove default margin for alignment */
 }
 
 .card p {
@@ -424,8 +423,6 @@ h3 i {
 .grid-cards .fas,
 .grid-cards .fa-solid {
     font-size: unset;
-    margin-right: unset;
-    opacity: unset;
 }
 
 /* And if needed, override the color rules too */
